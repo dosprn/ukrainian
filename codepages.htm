@@ -1,0 +1,97 @@
+<HTML><HEAD><TITLE>DOSPRN 1.85 codepages support</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META name=Keywords content="dos printer driver, dos code, dos codepages, dos codepages, dos printer, dos usb driver, dos print command, DOS, printers, program, print, printer, USB, programs, LPT, DOS program, software, national, language, internanional">
+<META name=Description content="DOSPRN allow to use your old favorite DOS program with new printers independently of their types (yes, and USB also !)">
+<meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<BODY background=images/bg2.jpg>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width=550 border=0>
+
+<TR>
+<TD width="100%">
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+
+<TR>
+<TD width=50><IMG height=39 alt="Print from DOS on printers under Windows98, WinXP, Windows2000" src="images/logo.gif" width=42></TD>
+<TD width=281><FONT size=5><B>DOSPRN 1.85</B></FONT></TD>
+<TD width=194>
+<TABLE cellSpacing=4 cellPadding=4 bgColor=#c0c0c0 border=2>
+
+<TR>
+          <td><a href="http://www.dosprn.com"><img src="images/uno_fl_s.gif" align="center" width="30" height="20" alt="Dos print international support center DOSPRN" border=0></a></td>
+          <td><a href="http://ukrainian.dosprn.com" id="ukrainian"><img src="images/ukraine_fl_s.gif" width="30" height="20" alt="DOSPRN Ukrainian dos print support center" align="center" border="0"></a></td>
+          <td><a href="http://polska.dosprn.com"><img src="images/poland_fl_s.gif" width="30" height="20" alt="Dosprinter Polish support center" align="center" border="0"></a></td>
+                    <td><a href="http://dosprn.co.il"><img src="images/israel_fl_s.gif" width="30" height="20" alt="DOSPRN Israel dos usb support center" align="center" border="0"></a></td>
+          <td><a href="http://bkltd.com/dosprn/"><img src="images/bulgaria_fl_s.gif" width="30" height="20" alt="DOSPRN Bulgaria dos print support center" align="center" border="0"></a></td>
+
+          <td><a href="http://indonesian.dosprn.com"><img src="images/indonesia_fl_s.gif" width="30" height="20" alt="Indonesian DOSPRN support center" align="center" border="0"></a></td>
+          <td><a href="http://dosprn.cz/index.php?doorkey=kontakt"><img src="images/chech_fl_s.gif" width="30" height="20" alt="DOS USB Czech support center" align="center" border="0"></a></td>
+<TR>
+<TD align=middle width="100%">
+<HR>
+<A href="index.htm">About</A> | <A href="readme.htm">Manual</A> | <A href="news.htm">What's New</A> | <A href="download.htm">Download </A>| <A href="order.htm">Order</A> | <A href="faq.htm">FAQ</A> | <A href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Support</A> | <A href="login.htm">Login </A>
+<HR>
+</TD></TR>
+<TR>
+<TD width="100%">
+<H3>Codepage module description</H3>
+<P>DOSPRN supports various codepages. At present, 850 (East Europe), 852 (West Europe), 737 (Greece), 437 (USA),
+857 (Turkish), 862 (Hebrew),
+775 (Latvian), 1125 (Ukrainian), 855 (Bulgarian), and 866 (Cyrillic) codepages are supported.</P>
+<P>Moreover, users can create another codepage support module. Each language module is a text file with <B>.CP </B>extension. This file includes the strings of the below type:</P><PRE><B><I>ascii_letter=unicode</I></B></PRE>
+<P>In this example, &quot;ascii_letter" is a standard DOS symbol. Since the first half of ASCII table (codes from 0 through 127) contains the non-printable symbols, Roman letters, signs and numbers, we recommend that you specify only the second half of ASCII table (codes from 128 through 255).</P>
+<P>This part of the table usually contains letters of a national alphabet. Their tracing is determined by the type of codepage that you use in DOS. You should find the appropriate letter in the Unicode table and write its code after equals sign. You can write a Unicode number both in decimal and hexadecimal format. In the second case, the number must be preceded with the "$" sign.</P>
+<P>For example, you can describe the "?" symbol  as ?=$00C6 or ?=198.</P>
+<P>In case ASCII letters and Unicode letters follow one by one, you can use more compact form</P><PRE><B><I>ascii_letter1..ascii_letter2=unicode1..unicode2</I></B></PRE>
+<P>where "letter1..letter2" are a range of DOS letters and "unicode1..unicode2" are a range of corresponding
+Unicode symbols.</P>
+<P>You can copy any language module file to a new file (but with the same extension) and open it in DOS text editor. Then you can modify the Unicode strings and save this file.</P>
+<P>After you've done the codepage file updating, you should restart DOSPRN and your codepage module will be loaded.</P>&nbsp;</TD></TR>
+<TR>
+<TD align=middle width="100%">
+<HR>
+      <FONT size=3><A href="index.htm">About</A> | <A 
+      href="readme.htm">Manual</A> | <A href="news.htm">What's New</A> | <A 
+      href="download.htm">Download 
+      </A>| <A 
+      href="order.htm">Order</A> | <A href="faq.htm">FAQ</A> | <A 
+      href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Support</A> | <A href="download.htm">Login 
+      </A></FONT> 
+<HR>
+</TD></TR></TABLE></DIV>
+
+<!--WEBSITECEO:BEGIN:{764EEF2E-BC11-45CF-8627-300CE1BA2219}-->
+<!--
+Do NOT modify this script to avoid traffic misrepresentation! 
+Web CEO 4 0300/1
+Code initially inserted into: "/codepages.htm".
+-->
+<script type="text/javascript"><!--
+// hitlens v1.2.7
+function hitlens_embedded() {
+var id = 2505;
+var pc = 56;
+var PAGENAME = escape('');
+var CONTENTGROUP = escape('');
+var TRANSACTION = escape('');
+var TRANSACTION_ID = 0;
+var ORDER = escape('');
+return "id="+id+"&pc="+pc+"&p="+PAGENAME+"&gr="+CONTENTGROUP+"&tr="+TRANSACTION+"&trid="+TRANSACTION_ID+"&ord="+ORDER;
+}
+//--></script>
+<script type="text/javascript" src="/webceo.js"></script>
+<!--WEBSITECEO:END:{764EEF2E-BC11-45CF-8627-300CE1BA2219}-->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39647417-1', 'dosprn.com');
+  ga('send', 'pageview');
+
+</script>
+</body></HTML>
