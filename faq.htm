@@ -22,7 +22,7 @@
     <TD width="100%">      <table border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="50"><IMG src="images/logo.gif" ALT="Print from DOS on printers under Windows98, WinXP, Windows2000" width="42" height="39"></td>
-          <td width="281"><font size="5"><b>DOSPRN 1.88</b></font></td>
+          <td width="281"><font size="5"><b>DOSPRN 1.89</b></font></td>
           <td width="194">      
       <table border="2" bgcolor="#C0C0C0" cellpadding="4" cellspacing="4">
         <tr>
@@ -80,11 +80,6 @@
           file&quot; option but reports from my DOS program are not captured .
           Why ?</a>
           </h4>
-        <li>
-          <h4><a href="#18">I tested DOSPRN trying to print out files with the &quot;copy filename prn&quot; DOS command. I have come to a conclusion
-          DOSPRN can't process simple DOS commands. </a><a href="#18">Any suggestions
-          please ?</a></h4>
-        </li>
       </ul>
           
         </li>
@@ -239,28 +234,6 @@
           option and set up the &quot;Job filename&quot; properties to match
           your report file names. Don't forget that temporary job file will be removed by DOSPRN
           after printing.
-          </p>
-        <li>
-          <p><a name="18"></a><b>I tested DOSPRN trying to print out files with
-          &quot;copy filename prn&quot; DOS command. I have come to the conclusion
-          that DOSPRN can't process simple DOS commands. Any suggestions please ?<br>
-          <br>
-          </b>I think you have Windows NT/2000/XP operating system. These OS do
-          not have pure DOS. DOS-box is not DOS and NT/2000/XP console commands
-          are not DOS commands.<br>
-          <br>
-          For example, NT/2000/XP use a "copy" command from their 32-bit kernel. Another
-          standard command for file printing (the <b>PRINT</b> command) is not a usual
-          DOS program. This is native Win32 console program (you can
-          find it in the SYSTEM32 directory, open it with any hexadecimal viewer and to<br>
-          be convinced).&nbsp;<br>
-          <br>
-          DOSPRN (namely the dos driver <i><b>PRN2FILE)</b></i> can't capture Win32 kernel output since it
-          can't redirect COPY and PRINT commands.<br>
-          <br>
-          If you want to print pure TXT files I recommend printing them with the
-          command <p><code>copy filename &quot;%USERPROFILE%\prnspl1&quot;</code></p>. In this case your file will get directly into
-          the DOSPRN spool buffer and will be processed immediately.
           </p>
       </ul>
           
