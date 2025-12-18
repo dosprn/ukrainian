@@ -1,9 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><link rel="canonical" href="https://ukrainian.dosprn.com/login.htm" /><TITLE>DOSPRN 2.1 registered users login</TITLE>
+<HTML><HEAD><link rel="canonical" href="https://www.dosprn.com/login.htm" /><TITLE>DOSPRN 2.1 registered users login</TITLE>
 <META http-equiv=Content-Language content=en-us>
-<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META name=Keywords  content="dos printer driver, dos printer, dos usb driver, dos print command, DOS, printers, program, print, printer, USB, programs, LPT, DOS program, software, national, language, internanional" >
+<META name=Description  content="DOSPRN customers could contact dos print support team via email. Usually we answer messages during 24 hours." >
 <meta name=viewport content="width=device-width, initial-scale=1">
+
+<style>
+.loader {
+  margin: auto;
+  border: 5px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 5px solid #FF7A59;
+  width: 20px;
+  height: 20px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
 
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -12,14 +30,49 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "ajnahusunj");
 </script>
+
+    <script type="text/javascript" 
+        src="rc4.js">
+    </script>
+    <script type="text/javascript" 
+        src="serialize.js">
+    </script>
+
+<script type="text/javascript">
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    return '';
+}
+function adjust() {
+  document.getElementById("order").setAttribute("value", getQueryVariable('order'));
+  document.getElementById("email").setAttribute("value", getQueryVariable('email'));
+}
+</script>
+
+<style>
+input {
+  height: 100%;
+  padding: 8px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
 </head>
-<BODY background=images/bg2.jpg>
+<BODY background="images/bg2.jpg" onload="adjust()">
 <DIV align=center>
 <CENTER>
-<TABLE cellSpacing=0 cellPadding=0 width=550 border=0>
-  
+<TABLE cellSpacing=0 cellPadding=6 width=50% style="max-width:640px" border=0>
   <TR>
-    <TD width="100%">      <table border="0" cellspacing="0" cellpadding="0">
+    <TD width="100%">
+      <table border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="50"><IMG src="images/logo.gif" ALT="Print from DOS on printers under Windows98, WinXP, Windows2000" width="42" height="39"></td>
           <td width="281"><font size="5"><b>DOSPRN 2.1</b></font></td>
@@ -37,45 +90,189 @@
           <td><a href="https://indian.dosprn.com/"><img src="images/in.png" width="30" height="20" alt="Indian DOSPRN support" align="center" border="0"></a></td>
 
         </tr>
-      </table>
-			</td>
-        </tr></table>
-</TD></TR>
+      </table></td></tr></table>
+    </TD>
+  </TR>
   <TR>
-    <TD align=middle width="100%">
+    <TD align=middle width=550 height=26>
       <HR>
-      <FONT size=3><A href="about.htm">About</A> | <A 
-      href="readme.htm">Manual</A> | <A href="news.htm">What's New</A> | <A 
-      href="download.htm">Download 
-      </A>| <A 
-      href="order.htm">Order</A> | <A href="faq.htm">FAQ</A> | <A 
-      href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Support</A> | <A href="login.htm">Login 
-      </A></FONT> 
-
+      <FONT size=3><A href="about.htm">О програмі</A> | <A 
+      href="readme.htm">Документація</A> | <A href="news.htm">Що нового</A> | <A 
+      href="download.htm">Загрузка</A> | <A href="order.htm">Реєстрація</A> | <A href="faq.htm">FAQ</A> | <A href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Зв'язок</A> | <A href="login.htm">Вхід
+      </A></FONT>
       <HR>
     </TD></TR>
   <TR>
     <TD width="100%">
-      <H3>Login</H3>
-      <p>We plan to introduce online KEY generation service for registered users
-      in the nearest future.&nbsp;</p>
-      <p>Thus our users will be able to generate licenses keys for their
-      computers in any time convenient for them.</p>
-      <P><b>Coming soon ...</b></P>
-      Now you can <A href="mailto:support@dosprn.com?Subject=DOSPRN%20LICENSE%20KEY">contact me</A> via email.<P></TD></TR>
-  <TR>
-    <TD align=middle width="100%">
-      <HR>
-      <FONT size=3><A href="about.htm">About</A> | <A 
-      href="readme.htm">Manual</A> | <A href="news.htm">What's New</A> | <A 
-      href="download.htm">Download 
-      </A>| <A 
-      href="order.htm">Order</A> | <A href="faq.htm">FAQ</A> | <A 
-      href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Support</A> | <A href="login.htm">Login 
-      </A></FONT> 
+      <H1>Login</H1>
+      <h3>This is an online key generation service for registered users.&nbsp;</h3>
+	To obtain a license key, you need to indicate:
+      <ul><li> the number of the DOSPRN order and</li>
+	 <li>the email address specified when purchasing the license.</li></ul>
+         You also need to specify a unique registration code:
+         <ul><li>open the main  DOSPRN window</li>
+	<li>click on the 'Registration' button and copy data from the 'Code' field</li></ul>
+      <P>
 
+<script>
+function chMode() {
+  var c = document.getElementById('replace').checked;
+  document.getElementById('replacediv').style.display = c ? 'inline' : 'none';
+}
+
+function NewKeyVisibility(v) {
+  var c0 = document.getElementById('newkeydiv');
+  c0.style.display = v;
+
+  var c2 = document.getElementById('newkeylbl2');
+  if (c0.style.backgroundColor !== 'red') {
+    c2.style.display = v;
+  } else {
+    c2.style.display = 'none';
+  }
+
+  if (v === 'inline') {
+    c0.scrollIntoView();
+  }
+}
+
+function GetLicense() {
+  var loader = document.getElementById('loader');
+  loader.style.display = 'block';
+
+  NewKeyVisibility('none');
+
+  const salt = "dosprnkeygendosprnkeygen";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      const response = rc4(salt, atob(this.responseText) );
+
+      if (this.status == 200) {
+        const resobj = JSON.parse(response);
+	rtext = resobj.text;
+	rnote = resobj.note;
+	rerrr = resobj.error;
+      } else {
+	rtext = 'An unexpected error has occurred. Try again later or contact support, please.';
+	rnote = 'error';
+	rerrr = 1;
+      }
+
+      var style = document.getElementById("newkey").style;
+      if (rerrr == 1) {
+        style.backgroundColor = 'red';
+	style.color = 'white';
+	style.fontWeight = 'bold';
+      } else {
+	style.backgroundColor = 'initial';
+	style.color = 'initial';
+	style.fontWeight = 'initial';
+      }
+
+      document.getElementById("newkey").value = rtext;
+      document.getElementById("code").value = '';
+      document.getElementById("key").value = '';
+      if (rnote) {
+	document.getElementById("newkeylbl").innerText = rnote;
+      } else {
+	document.getElementById("newkeylbl").innerText = '';
+      }
+      NewKeyVisibility('inline');
+      ReqEnabled();
+      loader.style.display = 'none';
+    }
+  };
+  xhttp.open("POST", "https://check.dosprn.com/keygen.php", true);
+  xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  var o = formDataToObject(document.getElementById('form'));
+  var queryString = btoa(rc4(salt, JSON.stringify(o) ) );
+
+  xhttp.send(queryString);
+}
+
+function CopyKey(id) {
+  navigator.clipboard.writeText(document.getElementById(id).value);
+}
+
+function ReqEnabled() {
+  var c = document.getElementById("getlicense");
+  c.disabled = !(document.getElementById("order").value && document.getElementById("email").value && document.getElementById("code").value);
+}
+</script>
+
+    <form id="form" onsubmit="return false;">
+        <b>
+	<label for="order">* Order number (required)</label><br>
+        <input placeholder="Your order number" type="text" id="order" name="order" size="80" oninput="ReqEnabled()"><br><br>
+
+	<label for="email">* Email (required)</label><br>
+        <input placeholder="Registered email address" type="email" id="email" name="email" size="80" oninput="ReqEnabled()"><br><br>
+
+	<label for="code">* Registration code (required)</label><br>
+        <input placeholder="Registration code from your computer" type="text" id="code" name="code" size="80" oninput="ReqEnabled()"><br><br>
+
+        <input type="radio" id="new" name="mode" value="NEW" checked onchange="chMode()"><label for="new">&nbsp;Get a new prepaid key</label><br>
+        <input type="radio" id="replace" name="mode" value="REPLACE" onchange="chMode()"><label for="replace">&nbsp;Replace the existing key</label><br>
+	</b>
+	<div style="display:none" id="replacediv">
+	<p>You need to specify the previous license key if you want to get a replacement instead of a previously issued one.</p>
+        <b>
+	<label for="key" id="keyid">* Old license key (required)</label><br>
+        <input placeholder="Old registration key" type="text" id="key" name="key" size="80"><br><br></div>
+        </b>
+    </form>
+
+        <b>
+	<table><tr>
+	<td><button type="button" style="height:50px;width:200px" id="getlicense" onclick="GetLicense()" disabled>Get a license key</button></td>
+	<td style="padding-left:10px"><div class="loader" id="loader" style="display:none"></div></td>
+        </tr></table>
+
+<br><br>
+
+	<div style="display:none" id="newkeydiv">
+	<label for="newkey" id="newkeylbl"></label>
+	<button onclick="CopyKey('newkey')" id="newkeyclp">Copy to clipboard</button><br>
+        <input placeholder="New registration key" type="text" id="newkey" name="newkey" size="80" readonly="readonly"><br><br>
+	<label for="newkey" id="newkeylbl2">Place this key in the appropriate field in the "Registration" window and press the "Ok" button. Please take into account you have to enter the key as shown above, with hyphens.</label><br>
+	</div>
+
+	</b></P>
+      If you're having trouble you can <A href="mailto:support@dosprn.com?Subject=DOSPRN%20LICENSE%20KEY">contact me</A> via email.<P></TD></TR>
+    <TD align=middle width=550 height=26>
       <HR>
-    </TD></TR></TABLE></CENTER></DIV>
+      <FONT size=3><A href="about.htm">О програмі</A> | <A 
+      href="readme.htm">Документація</A> | <A href="news.htm">Що нового</A> | <A 
+      href="download.htm">Загрузка</A> | <A href="order.htm">Реєстрація</A> | <A href="faq.htm">FAQ</A> | <A href="mailto:support@dosprn.com?Subject=DOSPRN%20support">Зв'язок</A> | <A href="login.htm">Вхід
+      </A></FONT>
+      <HR>
+    </TD></TR>
+
+<tr><td>
+</td></tr>
+</TABLE></CENTER></DIV>
+
+<BR>
+<center><table>  <tr><td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7345064744247144";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>  </td></tr>
+</table></center>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39647417-1"></script>
 <script>
